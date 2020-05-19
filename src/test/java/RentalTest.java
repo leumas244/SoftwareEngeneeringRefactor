@@ -20,4 +20,9 @@ class RentalTest {
     void getRentCosts() {
         assertEquals(1.5, RentalTestClass.getRentCosts());
     }
+
+    @Test
+    void addFrequentRenterPoints() {
+        assertEquals(1, RentalTestClass.addFrequentRenterPoints());
+    }
 }
