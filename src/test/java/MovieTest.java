@@ -20,4 +20,14 @@ class MovieTest {
     void getTitle() {
         assertEquals("testMovie", TestMovieClass.getTitle());
     }
+
+    @Test
+    void addFrequentRenterPoints() {
+        assertEquals(1, TestMovieClass.addFrequentRenterPoints(0));
+    }
+
+    @Test
+    void getRentCosts() {
+        assertEquals(30.0, TestMovieClass.getRentCosts(10), 0);
+    }
 }

@@ -13,7 +13,10 @@ class Rental {
     }
 
     public double getRentCosts() {
-        return movie.getRentCosts(daysRented);
+        if ((movie.getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1)
+            return 2;
+        else
+            return 1;
     }
 
     public int addFrequentRenterPoints() {
